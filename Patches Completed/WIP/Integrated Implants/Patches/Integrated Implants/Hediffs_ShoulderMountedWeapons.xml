@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+		<defName>LTS_ShoulderTurretActive</defName>
+		<statBases>
+			<RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+			<SightsEfficiency>1.00</SightsEfficiency>
+			<ShotSpread>0.10</ShotSpread>
+			<SwayFactor>1.00</SwayFactor>
+		</statBases>
+		<Properties>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>Bullet_Obelisk_Basic</defaultProjectile>
+			<warmupTime>0.5</warmupTime>
+			<range>35</range>
+			<burstShotCount>1</burstShotCount>
+			<ticksBetweenBurstShots>36</ticksBetweenBurstShots>
+			<soundCast>GunShotA</soundCast>
+			<soundCastTail>GunTail_Light</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+			<recoilPattern>Mounted</recoilPattern>
+		</Properties>
+		<AmmoUser>
+			<magazineSize>50</magazineSize>
+			<reloadTime>4.9</reloadTime>
+			<ammoSet>AmmoSet_303British</ammoSet>
+			<reloadOneAtATime>True</reloadOneAtATime>
+		</AmmoUser>
+		<FireModes>
+			<aiAimMode>AimedShot</aiAimMode>
+			<noSnapshot>true</noSnapshot>
+			<noSingleShot>true</noSingleShot>
+		</FireModes>
+		<weaponTags Inherit="False">
+			<li>TurretGun</li>
+		</weaponTags>
+	</Operation>
+	
+</Patch>
